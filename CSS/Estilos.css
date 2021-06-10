@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Staatliches', cursive;
+    color: #ffff;
+
+}
+section{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+}
+
+section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+section a{
+    display: inline-block;
+    height: auto;
+    padding: 9px 0;
+    color: #000;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #ffff;
+    border-radius: 50px;
+    background: #ffff;
+    
+
+
+}
+
+section a>#sec4{
+    height: top;
+}
+
+section p{
+    /*font-weight: 450;*/
+    margin-bottom: 15px;
+}
+
+section img{
+    height: 60%;
+}
+
+section:nth-child(1){
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);;
+
+}
+section:nth-child(2){
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+section:nth-child(3){
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+section:nth-child(4){
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #f2f2f2;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #ffff;
+    
+}
+.tabla>img{
+    height: 64px;
+    width: 64px;
+
+}
+
+.tabla>h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.tabla>h3{
+    margin: 5px;
+    padding: 5px;
+}
+
+.tabla>p{
+    margin: 7px;
+    padding: 7px;
+}
+
+.tabla>a{
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabla:hover{
+    background:#4169e1;
+    color: #ffff;
+    transition: 0.2 all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.h2.final{
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    section{
+        flex-direction: column-reverse;
+        /*justify-content: center;*/
+    }
+
+    section >img{
+        height: 40%;
+    }
+
+    .contenedor-texto{
+        text-align: center;
+    }
+
+    
+}
+
+h3{
+    align-items: center;
+    color: #000;
+    font-size: 25px;
+}
+
+@media screen and (max-width:600px){
+    section{
+        flex-direction:column-reverse;
+        /*justify-content:cente;*/
+    }
+    .section >img{
+        height: 30%;
+    
+    }
+    
+}
